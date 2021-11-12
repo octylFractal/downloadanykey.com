@@ -12,9 +12,10 @@ fi
 # Echo and error ON!
 set -ex
 
-./node_modules/.bin/rollup -c
+# Generate the site into ./build/site
+pnpm run build
 
-ipfs_key="$(ipfs add -rQ --pin=false --cid-version=1 ./build)"
+ipfs_key="$(ipfs add -rQ --pin=false --cid-version=1 ./build/site)"
 
 if ! [ "$ipns_key" = "" ]; then
   ipfs name publish --offline --key="$ipns_key" /ipfs/"$ipfs_key"

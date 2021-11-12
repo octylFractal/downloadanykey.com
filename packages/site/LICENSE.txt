@@ -1,4 +1,4 @@
-Code in this repository is under the ISC License:
+Code in this folder is under the ISC License:
 
 Copyright 2021 Octavia Togami
 

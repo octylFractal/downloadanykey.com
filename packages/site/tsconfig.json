@@ -1,0 +1,23 @@
+{
+    "include": [
+        "src-gen/**/*"
+    ],
+    "compilerOptions": {
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
+        "noImplicitOverride": true,
+        "noImplicitReturns": true,
+        "noPropertyAccessFromIndexSignature": true,
+        "noUncheckedIndexedAccess": true,
+        "strict": true,
+        "module": "CommonJS",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "jsx": "react-jsx",
+        "jsxImportSource": "react",
+        "baseUrl": "./",
+        "target": "ESNext",
+        "outDir": "./build/gen",
+        "incremental": true
+    }
+}
