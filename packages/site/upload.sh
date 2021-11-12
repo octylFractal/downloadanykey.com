@@ -19,4 +19,6 @@ ipfs_key="$(ipfs add -rQ --pin=false --cid-version=1 ./build/site)"
 
 if ! [ "$ipns_key" = "" ]; then
   ipfs name publish --offline --key="$ipns_key" /ipfs/"$ipfs_key"
+else
+  printf '%s' "$ipfs_key"
 fi
