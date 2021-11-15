@@ -13,7 +13,7 @@ const KeyPileCard: React.FC<KeyPileCardProps> = ({imageUrl, imageAlt, title, fla
         <div className="card border-primary h-100">
             <img src={imageUrl} className="card-img-top border-bottom border-secondary" alt={imageAlt}/>
             <div className="card-body d-flex flex-column">
-                <h3 className="card-title">{title}</h3>
+                <h2 className="card-title">{title}</h2>
                 <p className="card-text">{flavorText}</p>
                 <a href={downloadUrl} className="btn btn-primary mt-auto" role="button">Download</a>
             </div>
